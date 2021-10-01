@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Score Keeper</title>
+</head>
+<style>
+    .winner{
+        color:green;
+    }
+
+    .loser{
+        color:red;
+    }
+</style>
+<body>
+    <div class="row">
+        <div class=" col-6 ">
+    <div class="card border-primary mb-3  " >
+        <img class="card-img-top" src="https://image.shutterstock.com/image-vector/judge-hand-holding-score-card-260nw-1751280158.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h1 class="card-title">Ping-Pong Game</h1>
+          <div id="img-info">Scores</div>
+          <div class="r">
+          <span id="first"><b>0</b></span>
+          <span>to</span>
+          <span id="second"><b>0</b></span>
+          <label class="dropdown" for="e">Playing for</label>
+          <select class="select" id="e">
+              <option value="6" selected>6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+          </select></div>
+          <div class="form-group bj">
+            <button type="button" class="btn btn-success first">Player1</button>
+            <button type="button" class="btn btn-danger second">Player2</button>
+            <button type="button" class="btn btn-warning reset">Reset</button>
+          </div>
+        </div>
+      </div>
+    
+       </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
